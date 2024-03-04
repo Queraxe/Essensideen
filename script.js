@@ -75,8 +75,6 @@ function generiere(){
     let index = getIndex();
 
     try {
-      console.log("neu: " + index);
-      console.log("alt: " + indexalt);
       while(index === indexalt) {
         index = getIndex();
       }
