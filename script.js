@@ -33,15 +33,60 @@ let Essensvorschläge = [
       name: "Lachs-Sahne-Nudeln",
       img: "https://img.chefkoch-cdn.de/rezepte/1430421247909430/bilder/1331946/crop-960x540/nudeln-mit-lachs-sahne-sauce.jpg",
       image: new Image()
+    },
+    {
+      name: "crepes",
+      img: "https://www.einfachbacken.de/sites/einfachbacken.de/files/styles/full_width_tablet_4_3/public/2021-01/crepes_teig_1.jpg?h=4521fff0&itok=XzzNNFWc",
+      image: new Image()
+    },
+    {
+      name: "Schnitzel mit Pommes",
+      img: "https://cdn.gutekueche.de/media/recipe/25461/wiener-schnitzel.jpg",
+      image: new Image()
+    },
+    {
+      name: "Pizza",
+      img: "https://img.zeit.de/zeit-magazin/wochenmarkt/2023-08/pizza-margherita-giovanni-stincone-rezept/super__450x300__mobile__scale_2",
+      image: new Image()
+    },
+    {
+      name: "Spinatspätzle",
+      img: "https://www.madamecuisine.de/wp-content/uploads/2020/11/spinat-spaetzle-featured.jpg",
+      image: new Image()
+    },
+    {
+      name: "Burger",
+      img: "https://ich-liebe-kaese.de/fileadmin/_processed_/b/3/rezept-pulled-chicken-cheese-burger_599718cf40_csm.jpg",
+      image: new Image()
+    },
+    {
+      name: "Flammkuchen",
+      img: "https://images.lecker.de/elsasser-flammkuchen,id=65c4c432,b=lecker,w=1200,rm=sk.jpeg",
+      image: new Image()
+    },
+    {
+      name: "Blätterteig",
+      img: "https://www.gutekueche.at/storage/media/recipe/42164/conv/lachs-schinken-schnecken-default.jpg",
+      image: new Image()
     }
 ]
 
 function generiere(){
     let index = getIndex();
 
+    try {
+      console.log("neu: " + index);
+      console.log("alt: " + indexalt);
+      while(index === indexalt) {
+        index = getIndex();
+      }
+    } catch(e){}
+
     let essen = Essensvorschläge[index];
 
     change(essen.name, essen.image);
+
+    indexalt = index;
 }
 
 function change(essensname, essensimg){
@@ -73,7 +118,6 @@ function getIndex(){
 function preload(){
     for (var i = 0; i < Essensvorschläge.length; i++) {
         Essensvorschläge[i].image.src = Essensvorschläge[i].img;
-        
     }
 }
 
