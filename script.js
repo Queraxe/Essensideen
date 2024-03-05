@@ -68,6 +68,16 @@ let Essensvorschläge = [
       name: "Blätterteig",
       img: "https://www.gutekueche.at/storage/media/recipe/42164/conv/lachs-schinken-schnecken-default.jpg",
       image: new Image()
+    },
+    {
+      name: "Currywurst",
+      img: "https://image.brigitte.de/11724870/t/_Z/v3/w1440/r1/-/pommes-frites-mit-currywurst.jpg",
+      image: new Image()
+    },
+    {
+      name: "Bohnenpfanne",
+      img: "https://teutogriller.de/wp-content/uploads/2020/06/IMG_4237.jpeg",
+      image: new Image()
     }
 ]
 
