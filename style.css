@@ -1,108 +1,108 @@
 html {
-    height: 100%;
-    font-family: 'Heebo', sans-serif;
-    background-color: var(--background-color);
+	height: 100%;
+	font-family: "Heebo", sans-serif;
+	background-color: var(--background-color);
 }
 
 :root {
-    --primary-color: #a3b18a;
-    --secondary-color: #588157;
-    --background-color: #dad7cd;
+	--primary-color: #a3b18a;
+	--secondary-color: #588157;
+	--background-color: #dad7cd;
 
-    --main-width: 20%;
-    --border-radius: 10px;
-    --margin: 30px;
+	--main-width: 20%;
+	--border-radius: 10px;
+	--margin: 30px;
 
-    --transition-time: 0.2s;
+	--transition-time: 0.2s;
 }
 
 body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-    margin: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 100%;
+	margin: 0;
 }
 
 #überschrift {
-    position: absolute;
-    top: 20px;
+	position: absolute;
+	top: 20px;
 }
 
 .main {
-    background-color: var(--primary-color);
-    border-radius: 20px;
+	background-color: var(--primary-color);
+	border-radius: 20px;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 
-    height: fit-content;
-    max-width: 70%;
-    padding: var(--margin);
+	height: fit-content;
+	max-width: 70%;
+	padding: var(--margin);
 }
 
 #name {
-    background-color: var(--secondary-color);
-    width: 100%;
-    height: 50px;
-    border-radius: var(--border-radius);
+	background-color: var(--secondary-color);
+	width: 100%;
+	height: 50px;
+	border-radius: var(--border-radius);
 
-    margin-bottom: var(--margin);
+	margin-bottom: var(--margin);
 
-    font-size: 20px;
+	font-size: 20px;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 #image {
-    width: 100%;
-    aspect-ratio: 1;
-    border-radius: var(--border-radius);
-    object-fit: cover;
-    margin: 0;
-    padding: 0;
+	width: 100%;
+	aspect-ratio: 1;
+	border-radius: var(--border-radius);
+	object-fit: cover;
+	margin: 0;
+	padding: 0;
 }
 
 #imagediv {
-    width: 100%;
-    aspect-ratio: 1;
+	width: 100%;
+	aspect-ratio: 1;
 
-    font-size: 0;
+	font-size: 0;
 }
 
 #button {
-    background-color: var(--secondary-color);
-    width: 100%;
-    height: 50px;
-    border-radius: var(--border-radius);
+	background-color: var(--secondary-color);
+	width: 100%;
+	height: 50px;
+	border-radius: var(--border-radius);
 
-    margin-top: var(--margin);
+	margin-top: var(--margin);
 
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
 }
 
 #name,
 #imagediv,
 #button {
-    opacity: 1;
-    transition: all var(--transition-time);
+	opacity: 1;
+	transition: all var(--transition-time);
 
-    width: 100%;
-    max-width: 60vh;
+	width: 100%;
+	max-width: 60vh;
 }
 
 #button img {
-    height: 30px;
+	height: 30px;
 }
 
 #name.hide,
 #imagediv.hide,
 #button.hide {
-    opacity: 0;
+	opacity: 0;
 }
