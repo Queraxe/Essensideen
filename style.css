@@ -1,6 +1,6 @@
-html{
+html {
     height: 100%;
-    font-family: "Heebo", sans-serif;
+    font-family: 'Heebo', sans-serif;
     background-color: var(--background-color);
 }
 
@@ -13,11 +13,10 @@ html{
     --border-radius: 10px;
     --margin: 30px;
 
-    --transition-time: 0.2s
+    --transition-time: 0.2s;
 }
-  
 
-body{
+body {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -26,12 +25,12 @@ body{
     margin: 0;
 }
 
-#überschrift{
+#überschrift {
     position: absolute;
     top: 20px;
 }
 
-.main{
+.main {
     background-color: var(--primary-color);
     border-radius: 20px;
 
@@ -44,7 +43,7 @@ body{
     padding: var(--margin);
 }
 
-#name{
+#name {
     background-color: var(--secondary-color);
     width: 100%;
     height: 50px;
@@ -59,7 +58,7 @@ body{
     justify-content: center;
 }
 
-#image{
+#image {
     width: 100%;
     aspect-ratio: 1;
     border-radius: var(--border-radius);
@@ -68,14 +67,14 @@ body{
     padding: 0;
 }
 
-#imagediv{
+#imagediv {
     width: 100%;
     aspect-ratio: 1;
 
     font-size: 0;
 }
 
-#button{
+#button {
     background-color: var(--secondary-color);
     width: 100%;
     height: 50px;
@@ -88,7 +87,9 @@ body{
     justify-content: space-evenly;
 }
 
-#name, #imagediv, #button{
+#name,
+#imagediv,
+#button {
     opacity: 1;
     transition: all var(--transition-time);
 
@@ -96,10 +97,12 @@ body{
     max-width: 60vh;
 }
 
-#button img{
+#button img {
     height: 30px;
 }
 
-#name.hide, #imagediv.hide, #button.hide{
+#name.hide,
+#imagediv.hide,
+#button.hide {
     opacity: 0;
 }
